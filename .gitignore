@@ -46,3 +46,8 @@ Network Trash Folder
 Temporary Items
 .apdisk
 MutantCreatureDungeonCrawler/Temp/UnityLockfile
+MutantCreatureDungeonCrawler/Library/assetDatabase3
+MutantCreatureDungeonCrawler/Library/CrashedAssetImports.txt
+*.mdb
+*.dll
+MutantCreatureDungeonCrawler/Library/*
