@@ -50,5 +50,6 @@ MutantCreatureDungeonCrawler/Library/assetDatabase3
 MutantCreatureDungeonCrawler/Library/CrashedAssetImports.txt
 *.mdb
 *.dll
+*.meta
 MutantCreatureDungeonCrawler/Library/*
 MutantCreatureDungeonCrawler/Temp/*
