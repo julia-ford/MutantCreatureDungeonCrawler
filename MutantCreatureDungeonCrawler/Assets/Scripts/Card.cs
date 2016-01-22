@@ -3,6 +3,8 @@ using System.Collections;
 
 public abstract class Card {
 
+	private GameObject displayedCard = null;
+
 	public enum CardType { Spell, Enchantment, Curse, Equipment, Potion };
 
 	/// <summary>
@@ -27,9 +29,13 @@ public abstract class Card {
 
 	public void Show()
 	{
-		GameObject newObj = new GameObject("medicObj", typeof(SpriteRenderer));
-		SpriteRenderer renderer = newObj.GetComponent<SpriteRenderer>();
-		Sprite newSprite = Resources.Load<Sprite>("MagicCard");
-		renderer.sprite = newSprite;
+		if (this.displayedCard != null) {
+			GameObject newObj = new GameObject ("medicObj", typeof(SpriteRenderer));
+			SpriteRenderer renderer = newObj.GetComponent<SpriteRenderer> ();
+			Sprite newSprite = Resources.Load<Sprite> ("MagicCard");
+			renderer.sprite = newSprite;
+		} else {
+			this.displayedCard.GetComponent<SpriteRenderer> ().sprite = Resources.Load<Sprite> ("MagicCard");
+		}
 	}
 }
