@@ -53,3 +53,5 @@ MutantCreatureDungeonCrawler/Library/CrashedAssetImports.txt
 *.meta
 MutantCreatureDungeonCrawler/Library/*
 MutantCreatureDungeonCrawler/Temp/*
+*.sln
+*.csproj
