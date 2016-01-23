@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public abstract class Card {
+public  class Card {
 
 	private GameObject displayedCard = null;
 
@@ -29,13 +29,13 @@ public abstract class Card {
 
 	public void Show()
 	{
-		if (this.displayedCard != null) {
+		if (!this.displayedCard) {
 			GameObject newObj = new GameObject ("medicObj", typeof(SpriteRenderer));
 			SpriteRenderer renderer = newObj.GetComponent<SpriteRenderer> ();
 			Sprite newSprite = Resources.Load<Sprite> ("MagicCard");
 			renderer.sprite = newSprite;
 		} else {
-			this.displayedCard.GetComponent<SpriteRenderer> ().sprite = Resources.Load<Sprite> ("MagicCard");
+			this.displayedCard.GetComponent<SpriteRenderer>().sprite = Resources.Load<Sprite> ("MagicCard");
 		}
 	}
 }
